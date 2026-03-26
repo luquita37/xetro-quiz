@@ -14,7 +14,7 @@ const questions = [
     id: 1,
     title: "Uso de IA",
     question: "¿Cómo utilizás hoy la inteligencia artificial en tu trabajo?",
-    icon: <Brain className="w-6 h-6 text-xetro-cyan" />,
+    icon: <Brain className="w-6 h-6 text-xetro-violet-light" />,
     options: [
       { text: "No la uso o solo para consultas básicas muy esporádicas.", points: 1 },
       { text: "Uso ChatGPT u otras herramientas para redactar correos o textos simples.", points: 2 },
@@ -38,7 +38,7 @@ const questions = [
     id: 3,
     title: "Gestión de procesos",
     question: "¿Cómo funcionan hoy tus procesos?",
-    icon: <Cpu className="w-6 h-6 text-xetro-cyan" />,
+    icon: <Cpu className="w-6 h-6 text-xetro-violet-light" />,
     options: [
       { text: "Todo está en mi cabeza o en notas sueltas. Dependemos de la memoria.", points: 1 },
       { text: "Tenemos algunos documentos y planillas, pero no siempre se respetan.", points: 2 },
@@ -66,8 +66,8 @@ const getResult = (score: number) => {
       title: "Líder Operativo",
       description: "Alta carga operativa, baja integración de IA y procesos poco estructurados.",
       message: "Estás sosteniendo el sistema… pero el sistema todavía depende de vos.",
-      colorClass: "neon-text-cyan",
-      bgClass: "bg-xetro-cyan",
+      colorClass: "neon-text-violet-light",
+      bgClass: "bg-xetro-violet-light",
       progress: (score / 16) * 100
     };
   } else if (score <= 11) {
@@ -85,7 +85,7 @@ const getResult = (score: number) => {
       description: "Usás IA con intención, tenés procesos claros y pensás en escalabilidad.",
       message: "Ya no liderás tareas… liderás sistemas.",
       colorClass: "text-white text-shadow-glow",
-      bgClass: "bg-gradient-to-r from-xetro-cyan to-xetro-violet",
+      bgClass: "bg-gradient-to-r from-xetro-violet-light to-xetro-violet",
       progress: (score / 16) * 100
     };
   }
@@ -155,7 +155,7 @@ export default function App() {
             
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-                Descubrí tu perfil de <span className="neon-text-cyan">Liderazgo</span>
+                Descubrí tu perfil de <span className="neon-text-violet-light">Liderazgo</span>
               </h1>
               <p className="text-lg text-gray-400 max-w-lg mx-auto leading-relaxed">
                 Evaluá tu integración de IA, gestión de procesos y toma de decisiones en este breve cuestionario diseñado para líderes.
@@ -192,7 +192,7 @@ export default function App() {
             {/* Progress Bar */}
             <div className="w-full h-1 bg-gray-800 rounded-full mb-12 overflow-hidden">
               <motion.div 
-                className="h-full bg-gradient-to-r from-xetro-cyan to-xetro-violet"
+                className="h-full bg-gradient-to-r from-xetro-violet-light to-xetro-violet"
                 initial={{ width: `${(currentQuestion / questions.length) * 100}%` }}
                 animate={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
                 transition={{ duration: 0.3 }}
@@ -210,7 +210,7 @@ export default function App() {
               >
                 <div className="flex items-center gap-3 mb-4">
                   {questions[currentQuestion].icon}
-                  <h2 className="text-xl font-semibold text-xetro-cyan tracking-wide uppercase">
+                  <h2 className="text-xl font-semibold text-xetro-violet-light tracking-wide uppercase">
                     {questions[currentQuestion].title}
                   </h2>
                 </div>
@@ -226,7 +226,7 @@ export default function App() {
                       onClick={() => handleAnswer(option.points)}
                       className="glass-button w-full text-left p-5 rounded-xl flex items-start gap-4 group"
                     >
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-sm font-medium group-hover:border-xetro-cyan group-hover:text-xetro-cyan transition-colors mt-0.5">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-sm font-medium group-hover:border-xetro-violet-light group-hover:text-xetro-violet-light transition-colors mt-0.5">
                         {String.fromCharCode(65 + idx)}
                       </div>
                       <span className="text-gray-200 text-lg leading-relaxed group-hover:text-white transition-colors">
@@ -290,10 +290,10 @@ export default function App() {
             <div className="w-full border border-xetro-violet/30 bg-xetro-violet/5 rounded-2xl p-8 text-center mb-12 relative">
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-xetro-violet/5 pointer-events-none rounded-2xl"></div>
               <p className="text-xl sm:text-2xl font-medium leading-relaxed mb-8 text-gray-100">
-                "El verdadero cambio no está en trabajar más, está en dejar de operar y empezar a diseñar. <span className="neon-text-cyan font-semibold">Ahí es donde la IA se convierte en tu ventaja competitiva.</span>"
+                "El verdadero cambio no está en trabajar más, está en dejar de operar y empezar a diseñar. <span className="neon-text-violet-light font-semibold">Ahí es donde la IA se convierte en tu ventaja competitiva.</span>"
               </p>
               <a 
-                href="https://www.instagram.com/xetro.ai/" 
+                href="#" 
                 className="btn-primary btn-primary-glow inline-flex px-10 py-4 rounded-full text-lg items-center gap-2"
               >
                 Conocé XETRO

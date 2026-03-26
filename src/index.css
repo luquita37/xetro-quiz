@@ -3,7 +3,7 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-xetro-cyan: #00f2ff;
+  --color-xetro-violet-light: #c084fc;
   --color-xetro-violet: #8b5cf6;
   --color-xetro-dark: #000000;
 }
@@ -14,7 +14,7 @@ body {
   font-family: 'Inter', sans-serif;
   /* Subtle background glow */
   background-image:
-    radial-gradient(circle at 15% 50%, rgba(0, 242, 255, 0.05), transparent 35%),
+    radial-gradient(circle at 15% 50%, rgba(192, 132, 252, 0.05), transparent 35%),
     radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.05), transparent 35%);
   background-attachment: fixed;
   overflow-x: hidden;
@@ -36,14 +36,14 @@ body {
 
 .glass-button:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(0, 242, 255, 0.4);
-  box-shadow: 0 0 15px rgba(0, 242, 255, 0.15);
+  border-color: rgba(192, 132, 252, 0.4);
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.15);
   transform: translateY(-2px);
 }
 
-.neon-text-cyan {
-  color: #00f2ff;
-  text-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+.neon-text-violet-light {
+  color: #c084fc;
+  text-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
 }
 
 .neon-text-violet {
@@ -52,12 +52,12 @@ body {
 }
 
 .text-shadow-glow {
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(0, 242, 255, 0.4);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(192, 132, 252, 0.4);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #00f2ff, #8b5cf6);
-  color: black;
+  background: linear-gradient(135deg, #c084fc, #8b5cf6);
+  color: white;
   font-weight: 600;
   border: none;
   position: relative;
@@ -70,7 +70,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(135deg, #8b5cf6, #00f2ff);
+  background: linear-gradient(135deg, #8b5cf6, #c084fc);
   z-index: -1;
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -81,7 +81,7 @@ body {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 20px rgba(0, 242, 255, 0.6), 0 0 30px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.6), 0 0 30px rgba(139, 92, 246, 0.4);
   transform: translateY(-2px);
   color: white;
 }
@@ -91,7 +91,7 @@ body {
 }
 
 @keyframes pulse-glow {
-  0% { box-shadow: 0 0 15px rgba(0, 242, 255, 0.4), 0 0 15px rgba(139, 92, 246, 0.4); }
-  50% { box-shadow: 0 0 25px rgba(0, 242, 255, 0.8), 0 0 35px rgba(139, 92, 246, 0.8); }
-  100% { box-shadow: 0 0 15px rgba(0, 242, 255, 0.4), 0 0 15px rgba(139, 92, 246, 0.4); }
+  0% { box-shadow: 0 0 15px rgba(192, 132, 252, 0.4), 0 0 15px rgba(139, 92, 246, 0.4); }
+  50% { box-shadow: 0 0 25px rgba(192, 132, 252, 0.8), 0 0 35px rgba(139, 92, 246, 0.8); }
+  100% { box-shadow: 0 0 15px rgba(192, 132, 252, 0.4), 0 0 15px rgba(139, 92, 246, 0.4); }
 }
