@@ -293,7 +293,7 @@ export default function App() {
                 "El verdadero cambio no está en trabajar más, está en dejar de operar y empezar a diseñar. <span className="neon-text-cyan font-semibold">Ahí es donde la IA se convierte en tu ventaja competitiva.</span>"
               </p>
               <a 
-                href="https://www.xetro.ai/" 
+                href="https://www.instagram.com/xetro.ai/" 
                 className="btn-primary btn-primary-glow inline-flex px-10 py-4 rounded-full text-lg items-center gap-2"
               >
                 Conocé XETRO
